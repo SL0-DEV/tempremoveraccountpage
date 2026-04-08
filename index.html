@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Luminary – Account Deletion Request</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f4f6f8;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            background: white;
+            width: 95%;
+            max-width: 600px;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+        }
+
+        h1 {
+            margin-top: 0;
+            color: #222;
+        }
+
+        p {
+            color: #555;
+            line-height: 1.6;
+        }
+
+        label {
+            margin-top: 15px;
+            display: block;
+            font-weight: bold;
+            color: #333;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 12px;
+            margin-top: 6px;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+            font-size: 14px;
+        }
+
+        textarea {
+            resize: vertical;
+            min-height: 100px;
+        }
+
+        button {
+            margin-top: 20px;
+            width: 100%;
+            padding: 14px;
+            border: none;
+            border-radius: 8px;
+            background: #4a6cf7;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            opacity: 0.9;
+        }
+
+        .footer {
+            margin-top: 20px;
+            font-size: 12px;
+            color: #777;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Request Account Deletion</h1>
+
+        <p>
+            If you would like to permanently delete your Luminary account and all associated data,
+            please submit the form below. Our support team will process your request within 3–5 business days.
+        </p>
+
+        <form action="mailto:support@yourdomain.com" method="POST" enctype="text/plain">
+            <label for="email">Account Email Address</label>
+            <input type="email" id="email" name="email" required />
+
+            <label for="reason">Reason for deletion (optional)</label>
+            <textarea id="reason" name="reason"></textarea>
+
+            <button type="submit">Submit Deletion Request</button>
+        </form>
+
+        <div class="footer">
+            © 2026 Luminary. All rights reserved.
+        </div>
+    </div>
+</body>
+</html>
